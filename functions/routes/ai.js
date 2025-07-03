@@ -4,9 +4,9 @@ const admin = require("firebase-admin");
 
 const router = express.Router();
 
-const EDAMAM_APP_ID = "bf0d5e78";
-const EDAMAM_APP_KEY = "de9743bcc173d7920782af69fc25db75";
-const OPENROUTER_API_KEY = "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";
+const EDAMAM_APP_ID = "your_id";
+const EDAMAM_APP_KEY = "your_key";
+const OPENROUTER_API_KEY = "your_key";
 
 // Initialize Firebase Admin only once
 if (!admin.apps.length) {
