@@ -6,7 +6,7 @@ const router = express.Router();
 
 const EDAMAM_APP_ID = "bf0d5e78";
 const EDAMAM_APP_KEY = "de9743bcc173d7920782af69fc25db75";
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = "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";
 
 // Initialize Firebase Admin only once
 if (!admin.apps.length) {
