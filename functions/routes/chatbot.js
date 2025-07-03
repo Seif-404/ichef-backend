@@ -3,7 +3,7 @@ const axios = require("axios");
 
 const router = express.Router();
 
-const OPENROUTER_API_KEY = "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";
+const OPENROUTER_API_KEY = "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";
 const MODEL = "mistralai/mistral-7b-instruct";
 
 // POST /chatbot/

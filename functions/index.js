@@ -1,6 +1,9 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
+const admin = require("firebase-admin");
+admin.initializeApp();
+const db = admin.firestore();
 
 const aiRoutes = require("./routes/ai");
 const chatbotRoutes = require("./routes/chatbot"); // ✅ Add this
