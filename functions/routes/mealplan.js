@@ -2,7 +2,11 @@ const express = require("express");
 const admin = require("firebase-admin");
 const router = express.Router();
 
-const db = admin.firestore();
+if (!admin.apps.length) {
+  admin.initializeApp(); // ✅ This line is required
+}
+const db = admin.firestore(); // ✅ Safe now
+
 const mealPlansCollection = db.collection("mealPlans");
 
 // POST: Add a meal plan
